@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragment.MelodisFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TxtTitleHarmonis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/melodis"
+            android:fontFamily="@font/candal"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/flute"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/card_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="15dp"
+            app:cardCornerRadius="18dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_flute"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/flute"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/btnFlute"
+                    android:layout_width="195dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/card_border_2"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_flute"
+                    app:layout_constraintTop_toTopOf="parent" >
+
+                    <TextView
+                        android:id="@+id/txtFlute"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/flute"
+                        android:layout_marginTop="35dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/candal"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trumpet"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/card_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="15dp"
+            app:cardCornerRadius="18dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_trumpet"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/trumpet"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/btnTrumpet"
+                    android:layout_width="195dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/card_border_2"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_trumpet"
+                    app:layout_constraintTop_toTopOf="parent" >
+                    <TextView
+                        android:id="@+id/txtTrumpet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trumpet"
+                        android:layout_marginTop="35dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/candal"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/harmonica"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/card_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="15dp"
+            app:cardCornerRadius="18dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_harmonica"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/harmonica"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/btnHarmonica"
+                    android:layout_width="195dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/card_border_2"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_harmonica"
+                    app:layout_constraintTop_toTopOf="parent" >
+                    <TextView
+                        android:id="@+id/txtHarmonica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harmonica"
+                        android:layout_marginTop="35dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/candal"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sasando"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/card_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="15dp"
+            app:cardCornerRadius="18dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_sasando"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/sasando"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/btnSasando"
+                    android:layout_width="195dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/card_border_2"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_sasando"
+                    app:layout_constraintTop_toTopOf="parent" >
+                    <TextView
+                        android:id="@+id/txtSasando"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sasando"
+                        android:layout_marginTop="35dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/candal"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
